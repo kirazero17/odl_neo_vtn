@@ -17,7 +17,7 @@
   <!-- References to other services. -->
   <reference id="dataBroker" interface="org.opendaylight.controller.md.sal.binding.api.DataBroker" />
   <reference id="rpcRegistry" interface="org.opendaylight.controller.sal.binding.api.RpcProviderRegistry" />
-  <reference id="vtnManager" interface="org.opendaylight.vtn.manager.VTNManager" />
+  <reference id="vtnManager" interface="org.opendaylight.neovtn.manager.VTNManager" />
 
   <!-- Configuration for VTN neutron service. -->
   <odl:clustered-app-config
@@ -26,7 +26,7 @@
 
   <!-- VTN neutron service instance. -->
   <bean id="neutronProvider"
-        class="org.opendaylight.vtn.manager.neutron.impl.NeutronProvider"
+        class="org.opendaylight.neovtn.manager.neutron.impl.NeutronProvider"
         depends-on="vtnManager" destroy-method="close">
     <argument ref="vtnNeutronConfig" />
     <argument ref="dataBroker" />

@@ -46,9 +46,9 @@
         <extensions>true</extensions>
         <configuration>
           <instructions>
-            <!-- Need to add org.opendaylight.vtn.manager package to -->
+            <!-- Need to add org.opendaylight.neovtn.manager package to -->
             <!-- Import-Package explicitly for blueprint XML. -->
-            <Import-Package>*, org.opendaylight.vtn.manager</Import-Package>
+            <Import-Package>*, org.opendaylight.neovtn.manager</Import-Package>
           </instructions>
         </configuration>
       </plugin>
@@ -58,11 +58,11 @@
   <dependencies>
     <!-- VTN Manager bundles -->
     <dependency>
-      <groupId>org.opendaylight.vtn</groupId>
+      <groupId>org.opendaylight.neovtn</groupId>
       <artifactId>manager</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opendaylight.vtn</groupId>
+      <groupId>org.opendaylight.neovtn</groupId>
       <artifactId>manager.model</artifactId>
     </dependency>
 

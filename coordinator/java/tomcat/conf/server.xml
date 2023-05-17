@@ -33,7 +33,7 @@
   <Listener className="org.apache.catalina.core.ThreadLocalLeakPreventionListener" />
 
   <!-- Add server state listener for UNC add-ons. -->
-  <Listener className="org.opendaylight.vtn.tomcat.server.StateListener" />
+  <Listener className="org.opendaylight.neovtn.tomcat.server.StateListener" />
 
   <!-- A "Service" is a collection of one or more "Connectors" that share
        a single "Container" Note:  A "Service" is not itself a "Container",
@@ -70,7 +70,7 @@
         <Valve className="org.apache.catalina.valves.AccessLogValve"
                directory="${vtn.logdir}" prefix="access_log." suffix=".txt"
                fileDateFormat="yyyy-MM" resolveHosts="false"
-               pattern="%{yyyy-MM-dd HH:mm:ss.SSS z}t: %a %u &quot;%r&quot; %s %b %{org.opendaylight.vtn.unc.requestbody}r %{org.opendaylight.vtn.unc.errormessage}r" />
+               pattern="%{yyyy-MM-dd HH:mm:ss.SSS z}t: %a %u &quot;%r&quot; %s %b %{org.opendaylight.neovtn.unc.requestbody}r %{org.opendaylight.neovtn.unc.errormessage}r" />
 
       </Host>
     </Engine>

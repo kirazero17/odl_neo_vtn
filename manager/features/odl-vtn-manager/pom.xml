@@ -19,7 +19,7 @@
     <relativePath/>
   </parent>
 
-  <groupId>org.opendaylight.vtn</groupId>
+  <groupId>org.opendaylight.neovtn</groupId>
   <artifactId>odl-vtn-manager</artifactId>
   <version>0.9.1-SNAPSHOT</version>
   <packaging>feature</packaging>

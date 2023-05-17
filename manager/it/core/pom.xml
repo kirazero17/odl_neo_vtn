@@ -14,7 +14,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.opendaylight.vtn</groupId>
+    <groupId>org.opendaylight.neovtn</groupId>
     <artifactId>manager.it.common</artifactId>
     <version>0.9.1-SNAPSHOT</version>
     <relativePath>../common</relativePath>
@@ -46,13 +46,13 @@
   <dependencies>
     <!-- VTN Manager -->
     <dependency>
-      <groupId>org.opendaylight.vtn</groupId>
+      <groupId>org.opendaylight.neovtn</groupId>
       <artifactId>manager.it.dist</artifactId>
       <type>zip</type>
     </dependency>
 
     <dependency>
-      <groupId>org.opendaylight.vtn</groupId>
+      <groupId>org.opendaylight.neovtn</groupId>
       <artifactId>manager.it.base</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -144,7 +144,7 @@
                 ${project.build.testOutputDirectory}
               </outputDirectory>
               <includeGroupIds>
-                org.opendaylight.controller,org.opendaylight.vtn,org.jacoco,org.sonarsource.java
+                org.opendaylight.controller,org.opendaylight.neovtn,org.jacoco,org.sonarsource.java
               </includeGroupIds>
               <includeArtifactIds>
                 config-it-base,mdsal-it-base,manager.it.base,org.jacoco.agent,sonar-jacoco-listeners

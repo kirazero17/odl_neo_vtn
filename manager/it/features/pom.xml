@@ -19,7 +19,7 @@
     <relativePath/>
   </parent>
 
-  <groupId>org.opendaylight.vtn</groupId>
+  <groupId>org.opendaylight.neovtn</groupId>
   <artifactId>odl-vtn-manager-it</artifactId>
   <version>0.9.1-SNAPSHOT</version>
   <packaging>feature</packaging>
@@ -77,32 +77,32 @@
     <!-- Note that manager.neutron cannot be installed with ofmock because  -->
     <!-- it depends on ovsdb that requires openflowplugin.                  -->
     <dependency>
-      <groupId>org.opendaylight.vtn</groupId>
+      <groupId>org.opendaylight.neovtn</groupId>
       <artifactId>manager</artifactId>
       <version>${project.version}</version>
     </dependency>
 
     <dependency>
-      <groupId>org.opendaylight.vtn</groupId>
+      <groupId>org.opendaylight.neovtn</groupId>
       <artifactId>manager.model</artifactId>
       <version>${project.version}</version>
     </dependency>
 
     <dependency>
-      <groupId>org.opendaylight.vtn</groupId>
+      <groupId>org.opendaylight.neovtn</groupId>
       <artifactId>manager.implementation</artifactId>
       <version>${project.version}</version>
     </dependency>
 
     <!-- VTN Manager bundles only for IT -->
     <dependency>
-      <groupId>org.opendaylight.vtn</groupId>
+      <groupId>org.opendaylight.neovtn</groupId>
       <artifactId>manager.it.ofmock</artifactId>
       <version>${project.version}</version>
     </dependency>
 
     <dependency>
-      <groupId>org.opendaylight.vtn</groupId>
+      <groupId>org.opendaylight.neovtn</groupId>
       <artifactId>manager.it.util</artifactId>
       <version>${project.version}</version>
     </dependency>

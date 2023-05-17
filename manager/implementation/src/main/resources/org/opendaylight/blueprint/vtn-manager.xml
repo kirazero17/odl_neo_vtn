@@ -23,7 +23,7 @@
 
   <!-- VTN Manager service instance. -->
   <bean id="vtnManager"
-        class="org.opendaylight.vtn.manager.internal.provider.VTNManagerProviderImpl"
+        class="org.opendaylight.neovtn.manager.internal.provider.VTNManagerProviderImpl"
         destroy-method="close">
     <argument ref="blueprintBundleContext" />
     <argument ref="dataBroker" />
@@ -33,5 +33,5 @@
     <argument ref="entityOwnershipService" />
   </bean>
 
-  <service ref="vtnManager" interface="org.opendaylight.vtn.manager.VTNManager" />
+  <service ref="vtnManager" interface="org.opendaylight.neovtn.manager.VTNManager" />
 </blueprint>

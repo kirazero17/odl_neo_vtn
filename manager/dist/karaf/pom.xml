@@ -18,7 +18,7 @@
     <relativePath/>
   </parent>
 
-  <groupId>org.opendaylight.vtn</groupId>
+  <groupId>org.opendaylight.neovtn</groupId>
   <artifactId>distribution.vtn-manager.karaf</artifactId>
   <version>0.9.1-SNAPSHOT</version>
   <packaging>pom</packaging>
@@ -45,7 +45,7 @@
 
     <!-- VTN Manager feature -->
     <dependency>
-      <groupId>org.opendaylight.vtn</groupId>
+      <groupId>org.opendaylight.neovtn</groupId>
       <artifactId>features-vtn-manager</artifactId>
       <version>${project.version}</version>
       <classifier>features</classifier>
