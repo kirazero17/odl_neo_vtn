@@ -18,9 +18,9 @@
     <relativePath/>
   </parent>
 
-  <groupId>org.opendaylight.vtn</groupId>
+  <groupId>org.opendaylight.neovtn</groupId>
   <artifactId>distribution.vtn-manager.karaf</artifactId>
-  <version>0.9.0-SNAPSHOT</version>
+  <version>0.9.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <!-- <name> formatting is used by autorelease to parse and notify projects on
        build failure. Please do not modify this unless you have a good reason. -->
@@ -45,7 +45,7 @@
 
     <!-- VTN Manager feature -->
     <dependency>
-      <groupId>org.opendaylight.vtn</groupId>
+      <groupId>org.opendaylight.neovtn</groupId>
       <artifactId>features-vtn-manager</artifactId>
       <version>${project.version}</version>
       <classifier>features</classifier>

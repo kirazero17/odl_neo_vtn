@@ -22,9 +22,9 @@
   </root>
 
   <!-- Suppress unwanted logs. -->
-  <logger name="org.opendaylight.vtn.manager.neutron.impl.VTNManagerService"
+  <logger name="org.opendaylight.neovtn.manager.neutron.impl.VTNManagerService"
           level="OFF"/>
-  <logger name="org.opendaylight.vtn.manager.neutron.impl.MdsalUtils"
+  <logger name="org.opendaylight.neovtn.manager.neutron.impl.MdsalUtils"
           level="OFF"/>
 
 </configuration>

@@ -22,7 +22,7 @@
 
   <!-- openflowplugin mock-up service provider. -->
   <bean id="ofMockProvider"
-        class="org.opendaylight.vtn.manager.it.ofmock.impl.OfMockProvider"
+        class="org.opendaylight.neovtn.manager.it.ofmock.impl.OfMockProvider"
         destroy-method="close">
     <argument ref="blueprintBundleContext" />
     <argument ref="dataBroker" />
@@ -31,5 +31,5 @@
     <argument ref="notificationPublishService" />
   </bean>
 
-  <service ref="ofMockProvider" interface="org.opendaylight.vtn.manager.it.ofmock.OfMockService" />
+  <service ref="ofMockProvider" interface="org.opendaylight.neovtn.manager.it.ofmock.OfMockService" />
 </blueprint>

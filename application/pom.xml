@@ -15,13 +15,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.opendaylight.vtn</groupId>
+    <groupId>org.opendaylight.neovtn</groupId>
     <artifactId>common</artifactId>
     <version>0.9.0-SNAPSHOT</version>
     <relativePath>../common</relativePath>
   </parent>
 
-  <groupId>org.opendaylight.vtn.application</groupId>
+  <groupId>org.opendaylight.neovtn.application</groupId>
   <artifactId>dist</artifactId>
   <version>1.6.0-SNAPSHOT</version>
   <packaging>pom</packaging>
@@ -61,7 +61,7 @@
         <artifactId>maven-checkstyle-plugin</artifactId>
         <dependencies>
           <dependency>
-            <groupId>org.opendaylight.vtn</groupId>
+            <groupId>org.opendaylight.neovtn</groupId>
             <artifactId>manager.checkstyle</artifactId>
             <version>${vtn.manager.version}</version>
           </dependency>

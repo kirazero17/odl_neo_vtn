@@ -27,7 +27,7 @@
     <tag>HEAD</tag>
   </scm>
 
-  <groupId>org.opendaylight.vtn</groupId>
+  <groupId>org.opendaylight.neovtn</groupId>
   <artifactId>distribution.vtn-coordinator</artifactId>
   <version>6.7.0-SNAPSHOT</version>
   <!-- <name> formatting is used by autorelease to parse and notify projects on

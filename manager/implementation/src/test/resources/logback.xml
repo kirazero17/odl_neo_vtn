@@ -23,42 +23,42 @@
   </root>
 
   <!-- Suppress informational logs on tests. -->
-  <logger name="org.opendaylight.vtn" level="WARN"/>
+  <logger name="org.opendaylight.neovtn" level="WARN"/>
 
   <!-- Suppress unwanted logs. -->
-  <logger name="org.opendaylight.vtn.manager.internal.VTNConfig"
+  <logger name="org.opendaylight.neovtn.manager.internal.VTNConfig"
           level="ERROR"/>
-  <logger name="org.opendaylight.vtn.manager.internal.VTNThreadPool"
+  <logger name="org.opendaylight.neovtn.manager.internal.VTNThreadPool"
           level="OFF"/>
-  <logger name="org.opendaylight.vtn.manager.internal.ContainerConfig"
+  <logger name="org.opendaylight.neovtn.manager.internal.ContainerConfig"
           level="ERROR"/>
-  <logger name="org.opendaylight.vtn.manager.internal.config.OperationalListener"
+  <logger name="org.opendaylight.neovtn.manager.internal.config.OperationalListener"
           level="ERROR"/>
-  <logger name="org.opendaylight.vtn.manager.internal.config.VTNConfigManager"
+  <logger name="org.opendaylight.neovtn.manager.internal.config.VTNConfigManager"
           level="OFF"/>
-  <logger name="org.opendaylight.vtn.manager.internal.inventory.StaticTopologyManager"
+  <logger name="org.opendaylight.neovtn.manager.internal.inventory.StaticTopologyManager"
           level="ERROR"/>
-  <logger name="org.opendaylight.vtn.manager.internal.inventory.VTNInventoryManager"
+  <logger name="org.opendaylight.neovtn.manager.internal.inventory.VTNInventoryManager"
           level="OFF"/>
-  <logger name="org.opendaylight.vtn.manager.internal.inventory.xml.XmlStaticSwitchLinks"
+  <logger name="org.opendaylight.neovtn.manager.internal.inventory.xml.XmlStaticSwitchLinks"
           level="ERROR"/>
-  <logger name="org.opendaylight.vtn.manager.internal.inventory.xml.XmlStaticEdgePorts"
+  <logger name="org.opendaylight.neovtn.manager.internal.inventory.xml.XmlStaticEdgePorts"
           level="ERROR"/>
-  <logger name="org.opendaylight.vtn.manager.internal.util.XmlConfigFile"
+  <logger name="org.opendaylight.neovtn.manager.internal.util.XmlConfigFile"
           level="OFF"/>
-  <logger name="org.opendaylight.vtn.manager.internal.util.flow.action.FlowActionConverter"
+  <logger name="org.opendaylight.neovtn.manager.internal.util.flow.action.FlowActionConverter"
           level="OFF"/>
-  <logger name="org.opendaylight.vtn.manager.internal.util.flow.cond.FlowCondReader"
+  <logger name="org.opendaylight.neovtn.manager.internal.util.flow.cond.FlowCondReader"
           level="ERROR"/>
-  <logger name="org.opendaylight.vtn.manager.internal.util.flow.cond.VTNFlowCondition"
+  <logger name="org.opendaylight.neovtn.manager.internal.util.flow.cond.VTNFlowCondition"
           level="OFF"/>
-  <logger name="org.opendaylight.vtn.manager.internal.util.flow.filter.VTNRedirectFilter"
+  <logger name="org.opendaylight.neovtn.manager.internal.util.flow.filter.VTNRedirectFilter"
           level="OFF"/>
-  <logger name="org.opendaylight.vtn.manager.internal.util.tx.TxSyncFuture"
+  <logger name="org.opendaylight.neovtn.manager.internal.util.tx.TxSyncFuture"
           level="ERROR"/>
-  <logger name="org.opendaylight.vtn.manager.internal.util.tx.TxQueueImpl"
+  <logger name="org.opendaylight.neovtn.manager.internal.util.tx.TxQueueImpl"
           level="OFF"/>
-  <logger name="org.opendaylight.vtn.manager.internal.util.rpc.RpcUtils"
+  <logger name="org.opendaylight.neovtn.manager.internal.util.rpc.RpcUtils"
           level="OFF"/>
 
 </configuration>

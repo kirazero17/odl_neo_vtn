@@ -16,7 +16,7 @@
 
 	<servlet>
 		<servlet-name>uncWebAPIServlet</servlet-name>
-		<servlet-class>org.opendaylight.vtn.webapi.endpoint.VtnServiceWebAPIServlet</servlet-class>
+		<servlet-class>org.opendaylight.neovtn.webapi.endpoint.VtnServiceWebAPIServlet</servlet-class>
 
 		<load-on-startup>2</load-on-startup>
 	</servlet>

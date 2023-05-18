@@ -70,10 +70,10 @@
     <javadoc.exclude>*.internal,*.impl,*.it</javadoc.exclude>
 
     <!-- OpenDaylight artifacts -->
-    <odl.controller.mdsal.version>1.8.0-SNAPSHOT</odl.controller.mdsal.version>
-    <odl.openflowplugin.version>0.7.0-SNAPSHOT</odl.openflowplugin.version>
+    <odl.controller.mdsal.version>11.0.7</odl.controller.mdsal.version>
+    <odl.openflowplugin.version>0.16.0</odl.openflowplugin.version>
     <odl.neutron.version>0.11.0-SNAPSHOT</odl.neutron.version>
-    <odl.ovsdb.version>1.7.0-SNAPSHOT</odl.ovsdb.version>
+    <odl.ovsdb.version>1.16.0</odl.ovsdb.version>
     <odl.thirdparty.jung2.version>2.0.1</odl.thirdparty.jung2.version>
 
     <maven.site.skip>false</maven.site.skip>
@@ -246,7 +246,7 @@
         <artifactId>maven-checkstyle-plugin</artifactId>
         <dependencies>
           <dependency>
-            <groupId>org.opendaylight.vtn</groupId>
+            <groupId>org.opendaylight.neovtn</groupId>
             <artifactId>manager.checkstyle</artifactId>
             <version>${project.version}</version>
           </dependency>
@@ -292,10 +292,10 @@
         <artifactId>jacoco-maven-plugin</artifactId>
         <configuration>
           <includes>
-            <include>org.opendaylight.vtn.*</include>
+            <include>org.opendaylight.neovtn.*</include>
           </includes>
           <excludes>
-            <exclude>org.opendaylight.vtn.manager.it.*</exclude>
+            <exclude>org.opendaylight.neovtn.manager.it.*</exclude>
           </excludes>
         </configuration>
       </plugin>
@@ -456,29 +456,29 @@
     <dependencies>
       <!-- VTN Manager projects -->
       <dependency>
-        <groupId>org.opendaylight.vtn</groupId>
+        <groupId>org.opendaylight.neovtn</groupId>
         <artifactId>manager</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opendaylight.vtn</groupId>
+        <groupId>org.opendaylight.neovtn</groupId>
         <artifactId>manager.model</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opendaylight.vtn</groupId>
+        <groupId>org.opendaylight.neovtn</groupId>
         <artifactId>manager.implementation</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opendaylight.vtn</groupId>
+        <groupId>org.opendaylight.neovtn</groupId>
         <artifactId>manager.implementation</artifactId>
         <version>${project.version}</version>
         <classifier>config</classifier>
         <type>xml</type>
       </dependency>
       <dependency>
-        <groupId>org.opendaylight.vtn</groupId>
+        <groupId>org.opendaylight.neovtn</groupId>
         <artifactId>manager.neutron</artifactId>
         <version>${project.version}</version>
       </dependency>
