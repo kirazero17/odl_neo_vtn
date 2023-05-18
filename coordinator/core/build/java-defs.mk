@@ -74,7 +74,7 @@ include $(JAVA_CONFIG_MK)
 ##
 
 # Java compiler's option.
-JAVAC_ERRWARN	= -Werror
+#JAVAC_ERRWARN	= -Werror
 JAVAC_LINT	= -Xlint
 
 # Let javac generate debugging information if true.

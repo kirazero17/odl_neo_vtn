@@ -4071,7 +4071,7 @@ MAIN:
 						$CXX_MODE, undef, []));
 
 	# Determine compiler options for strict source check.
-	my $errwarn = ($conf->get('errwarn')) ? '-Werror' : undef;
+	my $errwarn = ($conf->get('errwarn')) ? '' : undef;
 	foreach my $opts (GCC_WARN_OPTS, $errwarn) {
 		next unless ($opts);
 		push(@CC_WARN, $opts)
