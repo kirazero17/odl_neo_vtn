@@ -1,0 +1,1 @@
+if you're using a newer version of json-c library, edit /usr/include/json-c/json.h and add "#include <bits.h>" to avoid the error for implicit usage of "is_error"
