@@ -41,7 +41,7 @@
     </scm>
 
     <properties>
-        <execplugin.version>1.2.1</execplugin.version>
+        <execplugin.version>3.0.0</execplugin.version>
 
         <!-- VTN Manager version -->
         <vtn.manager.version>0.9.1-SNAPSHOT</vtn.manager.version>
