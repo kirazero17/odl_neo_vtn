@@ -37,7 +37,9 @@ https://wiki.opendaylight.org/view/OpenDaylight_Virtual_Tenant_Network_(VTN):Ins
 
  5. Download and install Maven (3.8.3+)
 
- 6. Install gtest-devel and json-c libraries
+ 6. Install Python 2
+
+ 7. Install gtest-devel and json-c libraries
       Note: if you're using a newer version of json-c library, edit /usr/include/json-c/json.h and add "#include <bits.h>" to avoid the error for implicit usage of "is_error"
 
 === Build ===
