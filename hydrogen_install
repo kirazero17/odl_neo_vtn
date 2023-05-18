@@ -26,7 +26,8 @@ VTN Coordinator Installation Guide
 https://wiki.opendaylight.org/view/OpenDaylight_Virtual_Tenant_Network_(VTN):Installation:VTN_Coordinator
 
 == Installing VTN Coordinator from source code (My edit) ==
-=== Prior preparation ===
+
+=== Prior preparation (OS and prerequisites) ===
  1. Install Ubuntu 20.04 or later on your machine
 
  2. Download and install Build-essential from apt
