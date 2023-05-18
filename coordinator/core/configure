@@ -171,6 +171,7 @@ typedef struct {
 	int	length;
 	char	*data;
 	int	max;
+        unsigned long flags;
 } my_bufmem_t;
 
 #define	LAYOUT_CHECK(member)						\
