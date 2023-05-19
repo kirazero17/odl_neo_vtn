@@ -13,10 +13,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.opendaylight.odlparent</groupId>
+    <groupId>org.opendaylight.neovtn</groupId>
     <artifactId>feature-repo-parent</artifactId>
     <version>12.0.5</version>
-    <relativePath/>
+    <relativePath>..</relativePath>
   </parent>
 
   <groupId>org.opendaylight.neovtn</groupId>
