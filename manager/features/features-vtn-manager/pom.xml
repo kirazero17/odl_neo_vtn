@@ -14,9 +14,9 @@
 
   <parent>
     <groupId>org.opendaylight.neovtn</groupId>
-    <artifactId>features</artifactId>
+    <artifactId>manager.features</artifactId>
     <version>0.9.1-SNAPSHOT</version>
-    <relativePath>..</relativePath>
+    <relativePath>../</relativePath>
   </parent>
 
   <groupId>org.opendaylight.neovtn</groupId>
