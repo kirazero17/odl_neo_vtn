@@ -20,7 +20,6 @@
 
   <groupId>org.opendaylight.neovtn</groupId>
   <artifactId>manager.dist.karaf</artifactId>
-  <version>0.9.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <!-- <name> formatting is used by autorelease to parse and notify projects on
        build failure. Please do not modify this unless you have a good reason. -->
