@@ -118,7 +118,7 @@ on your local Linux machine.
  1. Download the code from the Git repository of VTN Project.
         git clone ssh://<username>@git.opendaylight.org:29418/vtn.git
           or
-        git clone https://git.opendaylight.org/gerrit/p/vtn.git
+        git clone https://github.com/kirazero17/odl_neo_vtn.git
 
 The following instructions assume you put the VTN source code
 in directory ${VTN_DIR}.
