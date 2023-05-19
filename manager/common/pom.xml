@@ -151,7 +151,6 @@
           <reportSet>
             <reports>
               <report>index</report>
-              <report>project-team</report>
               <report>license</report>
               <report>mailing-list</report>
               <report>plugin-management</report>
@@ -159,6 +158,7 @@
               <report>issue-tracking</report>
               <report>scm</report>
               <report>summary</report>
+              <report>project-team</report>
             </reports>
           </reportSet>
         </reportSets>
