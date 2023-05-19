@@ -70,7 +70,7 @@
     <javadoc.exclude>*.internal,*.impl,*.it</javadoc.exclude>
 
     <!-- OpenDaylight artifacts -->
-    <odl.controller.mdsal.version>11.0.7</odl.controller.mdsal.version>
+    <odl.controller.mdsal.version>1.11.3</odl.controller.mdsal.version>
     <odl.openflowplugin.version>0.16.0</odl.openflowplugin.version>
     <odl.neutron.version>0.11.0-SNAPSHOT</odl.neutron.version>
     <odl.ovsdb.version>1.16.0</odl.ovsdb.version>
