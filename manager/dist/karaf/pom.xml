@@ -14,12 +14,12 @@
   <parent>
     <groupId>org.opendaylight.odlparent</groupId>
     <artifactId>karaf4-parent</artifactId>
-    <version>3.1.0</version>
+    <version>12.0.5</version>
     <relativePath/>
   </parent>
 
   <groupId>org.opendaylight.neovtn</groupId>
-  <artifactId>manager.dist.karaf</artifactId>
+  <artifactId>manager.karaf</artifactId>
   <packaging>pom</packaging>
   <!-- <name> formatting is used by autorelease to parse and notify projects on
        build failure. Please do not modify this unless you have a good reason. -->
