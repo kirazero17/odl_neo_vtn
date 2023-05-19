@@ -264,7 +264,9 @@
           <configLocation>${vtn.checkstyle.xml}</configLocation>
           <consoleOutput>true</consoleOutput>
           <includeTestSourceDirectory>true</includeTestSourceDirectory>
-          <sourceDirectory>${project.basedir}</sourceDirectory>
+          <sourceDirectories>
+            <sourceDirectory>${project.basedir}</sourceDirectory>
+          </sourceDirectories>
           <includes>
             **\/*.java,**\/*.xml,**\/*.ini,**\/*.sh,**\/*.bat,**\/*.yang
           </includes>
