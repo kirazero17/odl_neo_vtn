@@ -106,6 +106,7 @@
     <dependency>
       <groupId>org.osgi</groupId>
       <artifactId>org.osgi.core</artifactId>
+      <version>6.0.0</version>
     </dependency>
 
     <!-- OpenDaylight controller (MD-SAL) -->
