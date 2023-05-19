@@ -19,7 +19,7 @@
   </parent>
 
   <groupId>org.opendaylight.neovtn</groupId>
-  <artifactId>distribution.vtn-manager.karaf</artifactId>
+  <artifactId>manager.karaf</artifactId>
   <version>0.9.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <!-- <name> formatting is used by autorelease to parse and notify projects on
