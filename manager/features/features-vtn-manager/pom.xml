@@ -50,7 +50,7 @@
     </dependency>
   </dependencies>
 
-  <url>/</url>
+  <url>${project.basedir}</url>
   <distributionManagement>
     <site>
       <id>opendaylight-site</id>
