@@ -50,7 +50,7 @@
     </dependency>
   </dependencies>
 
-  <url>${odl.site.url}/${project.groupId}/${stream}/${project.artifactId}/</url>
+  <url>/</url>
   <distributionManagement>
     <site>
       <id>opendaylight-site</id>
