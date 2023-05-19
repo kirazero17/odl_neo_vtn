@@ -1,6 +1,8 @@
 OpenDaylight Virtual Tenant Network (VTN)
 =========================================
 
+**This is the archived branch from the original Master Branch (v.0.9.0 - Somewhere Post-Oxygen)**
+
 ## Overview
 
 OpenDaylight VTN provides multi-tenant virtual network functions on
