@@ -15,11 +15,12 @@
     <groupId>org.opendaylight.odlparent</groupId>
     <artifactId>karaf4-parent</artifactId>
     <version>12.0.5</version>
-    <relativePath>../../features/features-vtn-manager</relativePath>
+    <relativePath/>
   </parent>
 
   <groupId>org.opendaylight.neovtn</groupId>
   <artifactId>distribution.manager.karaf</artifactId>
+  <version>0.9.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <!-- <name> formatting is used by autorelease to parse and notify projects on
        build failure. Please do not modify this unless you have a good reason. -->
@@ -49,8 +50,7 @@
       <version>${project.version}</version>
       <classifier>features</classifier>
       <type>xml</type>
-      <scope>runtime</scope>
-      
+      <scope>runtime</scope> 
     </dependency>
   </dependencies>
 
