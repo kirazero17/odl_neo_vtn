@@ -32,7 +32,7 @@ https://wiki.opendaylight.org/view/OpenDaylight_Virtual_Tenant_Network_(VTN):Ins
 
  2. Download and install Build-essential from apt
 
- 3. Download and install Java 17
+ 3. Download and install Java 17 (JDK + JRE)
 
  4. Download and install PostgreSQL
 
