@@ -13,10 +13,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.opendaylight.neovtn</groupId>
-    <artifactId>vtn-manager</artifactId>
-    <version>0.9.1-SNAPSHOT</version>
-    <relativePath>..</relativePath>
+    <groupId>org.opendaylight.odlparent</groupId>
+    <artifactId>odlparent-lite</artifactId>
+    <version>12.0.5</version>
+    <relativePath/>
   </parent>
 
   <groupId>org.opendaylight.neovtn</groupId>
