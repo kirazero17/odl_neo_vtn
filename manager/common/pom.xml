@@ -151,14 +151,14 @@
                     <reportSet>
                         <reports>
                             <!-- <report>cim</report>
-                            <report>issue-tracking</report>-->
-                            <report>index</report>
+                            <report>issue-tracking</report>
+                            <report>project-team</report>
                             <report>license</report>
-                            <report>mailing-list</report>
+                            <report>mailing-list</report>-->
+                            <report>index</report>
                             <report>plugin-management</report>
                             <report>scm</report>
                             <report>summary</report>
-                            <report>project-team</report>
                         </reports>
                     </reportSet>
                 </reportSets>
