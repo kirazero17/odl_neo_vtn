@@ -109,6 +109,7 @@
     <dependency>
       <groupId>org.opendaylight.mdsal.model</groupId>
       <artifactId>ietf-inet-types-2013-07-15</artifactId>
+      <version>1.5.3</version>
     </dependency>
     <dependency>
       <groupId>org.opendaylight.mdsal.model</groupId>
@@ -121,6 +122,7 @@
     <dependency>
       <groupId>org.opendaylight.mdsal.model</groupId>
       <artifactId>ietf-yang-types-20130715</artifactId>
+      <version>2013.07.15.13.3</version>
     </dependency>
 
     <!-- Google Guava -->
@@ -134,11 +136,14 @@
       <groupId>org.powermock</groupId>
       <artifactId>powermock-module-junit4</artifactId>
       <scope>test</scope>
+      <version>2.0.9</version>
     </dependency>
+    
     <dependency>
       <groupId>org.powermock</groupId>
       <artifactId>powermock-api-mockito</artifactId>
       <scope>test</scope>
+      <version>1.7.4</version>
     </dependency>
   </dependencies>
   <url>${odl.site.url}/${project.groupId}/${stream}/${project.artifactId}/</url>
