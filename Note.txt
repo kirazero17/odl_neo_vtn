@@ -1,4 +1,8 @@
 if you're using a newer version of json-c library, edit /usr/include/json-c/json.h and add "#include <bits.h>" to avoid the error for implicit usage of "is_error"
 
-Additional Commands
-mvn org.apache.maven.plugins:maven-install-plugin:2.3.1:install-file -Dfile=./manager/dist/karaf/pom.xml -DgroupId=org.opendaylight.neovtn -DartifactId=features-vtn-manager -Dversion=0.9.1-SNAPSHOT -Dpackaging=feature -DlocalRepositoryPath=<path-to-vtn-repo>/manager/features/features-vtn-manager/pom.xml
+Additional Commands:
+To fix dependencies for manager:
+mvn org.apache.maven.plugins:maven-enforcer-plugin:2.3.1:install-file -Dfile=./manager/dist/karaf/pom.xml -DgroupId=org.opendaylight.neovtn -DartifactId=features-vtn-manager -Dversion=0.9.1-SNAPSHOT -Dpackaging=feature -DlocalRepositoryPath=<path-to-vtn-repo>/manager/features/features-vtn-manager/pom.xml
+
+To fix dependencies for the whole repo:
+mvn install -U

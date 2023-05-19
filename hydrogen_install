@@ -126,7 +126,10 @@ in directory ${VTN_DIR}.
 
  2. Build the code of VTN Manager.
         cd ${VTN_DIR}
-        mvn -f manager/dist/pom.xml install
+        mvn -f manager/pom.xml install
+    some arguments:
+    -Dcheckstyle.skip=true - Skip checkstyle
+    -U - Fix dependencies
 
 == Run the Controller with VTN Manager ==
 On Linux/Unix systems, execute run.sh in the installation directory of
