@@ -12,619 +12,619 @@
 -->
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <prerequisites>
-    <maven>3.0</maven>
-  </prerequisites>
+    <modelVersion>4.0.0</modelVersion>
+    <prerequisites>
+        <maven>3.0</maven>
+    </prerequisites>
 
-  <groupId>org.opendaylight.neovtn</groupId>
-  <artifactId>manager.common</artifactId>
-  <packaging>pom</packaging>
-  <!-- <name> formatting is used by autorelease to parse and notify projects on
-       build failure. Please do not modify this unless you have a good reason. -->
-  <name>ODL :: vtn :: ${project.artifactId}</name>
-  <description>Common configuration required by POM files of VTN Manager.</description>
-
-  <parent>
     <groupId>org.opendaylight.neovtn</groupId>
-    <artifactId>common</artifactId>
-    <version>0.9.1-SNAPSHOT</version>
-    <relativePath>../../common</relativePath>
-  </parent>
+    <artifactId>manager.common</artifactId>
+    <packaging>pom</packaging>
+    <!-- <name> formatting is used by autorelease to parse and notify projects on
+    build failure. Please do not modify this unless you have a good reason. -->
+    <name>ODL :: vtn :: ${project.artifactId}</name>
+    <description>Common configuration required by POM files of VTN Manager.</description>
 
-  <scm>
-    <connection>scm:git:https://github.com/kirazero17/odl_neo_vtn.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com:kirazero17/odl_neo_vtn.git</developerConnection>
-    <url>https://wiki.opendaylight.org/view/OpenDaylight_Virtual_Tenant_Network_%28VTN%29:Main</url>
-    <tag>HEAD</tag>
-  </scm>
+    <parent>
+        <groupId>org.opendaylight.neovtn</groupId>
+        <artifactId>common</artifactId>
+        <version>0.9.1-SNAPSHOT</version>
+        <relativePath>../../common</relativePath>
+    </parent>
 
-  <properties>
-    <!-- Path to the top directory -->
-    <vtn.manager.dir>..</vtn.manager.dir>
+    <scm>
+        <connection>scm:git:https://github.com/kirazero17/odl_neo_vtn.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:kirazero17/odl_neo_vtn.git</developerConnection>
+        <url>https://wiki.opendaylight.org/view/OpenDaylight_Virtual_Tenant_Network_%28VTN%29:Main</url>
+        <tag>HEAD</tag>
+    </scm>
 
-    <!-- Default checkstyle configuration -->
-    <vtn.checkstyle.xml>vtn/checkstyle.xml</vtn.checkstyle.xml>
+    <properties>
+        <!-- Path to the top directory -->
+        <vtn.manager.dir>..</vtn.manager.dir>
 
-    <!-- Ignore maven-site-plugin goals if true -->
-    <vtn.site.skip>false</vtn.site.skip>
+        <!-- Default checkstyle configuration -->
+        <vtn.checkstyle.xml>vtn/checkstyle.xml</vtn.checkstyle.xml>
 
-    <!-- VM options for test -->
-    <vtn.vm.maxHeap>-Xmx2048m</vtn.vm.maxHeap>
-    <vtn.vm.argLine>${vtn.vm.maxHeap}</vtn.vm.argLine>
+        <!-- Ignore maven-site-plugin goals if true -->
+        <vtn.site.skip>false</vtn.site.skip>
 
-    <!-- Sonar properties -->
-    <sonar.host.url>https://sonar.opendaylight.org/</sonar.host.url>
-    <sonar.language>java</sonar.language>
+        <!-- VM options for test -->
+        <vtn.vm.maxHeap>-Xmx2048m</vtn.vm.maxHeap>
+        <vtn.vm.argLine>${vtn.vm.maxHeap}</vtn.vm.argLine>
 
-    <!-- All modules have to share a single IT code coverage report file.  -->
-    <sonar.jacoco.itReportPath>
-      ${vtn.manager.dir}/it/common/target/code-coverage/jacoco-it.exec
-    </sonar.jacoco.itReportPath>
+        <!-- Sonar properties -->
+        <sonar.host.url>https://sonar.opendaylight.org/</sonar.host.url>
+        <sonar.language>java</sonar.language>
 
-    <jxr.version>2.3</jxr.version>
-    <apiviz.version>1.3.2.GA</apiviz.version>
-    <java-formatter.version>0.3.1</java-formatter.version>
+        <!-- All modules have to share a single IT code coverage report file.  -->
+        <sonar.jacoco.itReportPath>
+            ${vtn.manager.dir}/it/common/target/code-coverage/jacoco-it.exec
+        </sonar.jacoco.itReportPath>
 
-    <!-- Exclude internal package from javadoc -->
-    <javadoc.exclude>*.internal,*.impl,*.it</javadoc.exclude>
+        <jxr.version>2.3</jxr.version>
+        <apiviz.version>1.3.2.GA</apiviz.version>
+        <java-formatter.version>0.3.1</java-formatter.version>
 
-    <!-- OpenDaylight artifacts -->
-    <odl.controller.mdsal.version>1.11.3</odl.controller.mdsal.version>
-    <odl.openflowplugin.version>0.16.0</odl.openflowplugin.version>
-    <odl.neutron.version>0.11.0-SNAPSHOT</odl.neutron.version>
-    <odl.ovsdb.version>1.16.0</odl.ovsdb.version>
-    <odl.thirdparty.jung2.version>2.0.1</odl.thirdparty.jung2.version>
+        <!-- Exclude internal package from javadoc -->
+        <javadoc.exclude>*.internal,*.impl,*.it</javadoc.exclude>
 
-    <maven.site.skip>false</maven.site.skip>
-    <maven.site.deploy.skip>false</maven.site.deploy.skip>
-  </properties>
+        <!-- OpenDaylight artifacts -->
+        <odl.controller.mdsal.version>1.11.3</odl.controller.mdsal.version>
+        <odl.openflowplugin.version>0.16.0</odl.openflowplugin.version>
+        <odl.neutron.version>0.11.0-SNAPSHOT</odl.neutron.version>
+        <odl.ovsdb.version>1.16.0</odl.ovsdb.version>
+        <odl.thirdparty.jung2.version>2.0.1</odl.thirdparty.jung2.version>
 
-  <profiles>
-    <profile>
-      <!-- Run strict coding style check -->
-      <id>strictcheck</id>
-      <activation>
-        <activeByDefault>false</activeByDefault>
-      </activation>
-      <properties>
-        <vtn.checkstyle.xml>vtn/checkstyle_strict.xml</vtn.checkstyle.xml>
-      </properties>
-    </profile>
+        <maven.site.skip>false</maven.site.skip>
+        <maven.site.deploy.skip>false</maven.site.deploy.skip>
+    </properties>
 
-    <profile>
-      <!-- Pass lint option to the compiler if vtn.build.lint is defined -->
-      <id>lint</id>
-      <activation>
-        <activeByDefault>false</activeByDefault>
-        <property>
-          <name>vtn.build.lint</name>
-        </property>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <configuration>
-              <compilerArgs>
-                <arg>-Xlint:${vtn.build.lint}</arg>
-              </compilerArgs>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
+    <profiles>
+        <profile>
+            <!-- Run strict coding style check -->
+            <id>strictcheck</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <vtn.checkstyle.xml>vtn/checkstyle_strict.xml</vtn.checkstyle.xml>
+            </properties>
+        </profile>
 
-    <profile>
-      <!-- Specify MaxPermSize to the test VM option. -->
-      <id>jdk8</id>
-      <activation>
-        <activeByDefault>false</activeByDefault>
-        <jdk>(,1.8)</jdk>
-      </activation>
-      <properties>
-        <vtn.vm.maxPerm>-XX:MaxPermSize=1024m</vtn.vm.maxPerm>
-        <vtn.vm.argLine>${vtn.vm.maxHeap} ${vtn.vm.maxPerm}</vtn.vm.argLine>
-      </properties>
-    </profile>
-  </profiles>
-
-  <modules>
-    <module>java</module>
-    <module>yang</module>
-  </modules>
-
-  <reporting>
-    <excludeDefaults>true</excludeDefaults>
-    <outputDirectory>${project.build.directory}/site</outputDirectory>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>3.4.3</version>
-        <configuration>
-          <dependencyDetailsEnabled>false</dependencyDetailsEnabled>
-          <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
-        </configuration>
-        <reportSets>
-          <reportSet>
-            <reports>
-              <report>index</report>
-              <report>license</report>
-              <report>mailing-list</report>
-              <report>plugin-management</report>
-              <report>cim</report>
-              <report>issue-tracking</report>
-              <report>scm</report>
-              <report>summary</report>
-              <report>project-team</report>
-            </reports>
-          </reportSet>
-        </reportSets>
-      </plugin>
-
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jxr-plugin</artifactId>
-        <version>${jxr.version}</version>
-        <configuration>
-          <aggregate>true</aggregate>
-          <linkJavadoc>true</linkJavadoc>
-        </configuration>
-      </plugin>
-
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-checkstyle-plugin</artifactId>
-        <configuration>
-          <configLocation>vtn/checkstyle_report.xml</configLocation>
-        </configuration>
-      </plugin>
-
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <configuration>
-          <finalName>${project.artifactId}-${build.suffix}</finalName>
-          <useStandardDocletOptions>true</useStandardDocletOptions>
-          <charset>${project.reporting.outputEncoding}</charset>
-          <encoding>${project.reporting.outputEncoding}</encoding>
-          <docencoding>${project.reporting.outputEncoding}</docencoding>
-          <breakiterator>true</breakiterator>
-          <version>true</version>
-          <author>true</author>
-          <keywords>true</keywords>
-          <excludePackageNames>${javadoc.exclude}</excludePackageNames>
-        </configuration>
-      </plugin>
-    </plugins>
-  </reporting>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>properties-maven-plugin</artifactId>
-        <executions>
-          <execution>
-            <goals>
-              <goal>set-system-properties</goal>
-            </goals>
-            <configuration>
-              <properties>
+        <profile>
+            <!-- Pass lint option to the compiler if vtn.build.lint is defined -->
+            <id>lint</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
                 <property>
-                  <name>logback.configurationFile</name>
-                  <value>
-                    ${vtn.manager.dir}/common/logback.xml
-                  </value>
+                    <name>vtn.build.lint</name>
                 </property>
-              </properties>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <configuration>
+                            <compilerArgs>
+                                <arg>-Xlint:${vtn.build.lint}</arg>
+                            </compilerArgs>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
 
-      <plugin>
-        <groupId>com.googlecode.maven-java-formatter-plugin</groupId>
-        <artifactId>maven-java-formatter-plugin</artifactId>
-        <version>${java-formatter.version}</version>
-        <configuration>
-          <compilerSource>${java.version.source}</compilerSource>
-          <compilerCompliance>${java.version.source}</compilerCompliance>
-          <compilerTargetPlatform>
-            ${java.version.target}
-          </compilerTargetPlatform>
-          <configFile>
-            ${vtn.manager.dir}/common/sun_coding_style.xml
-          </configFile>
-        </configuration>
-      </plugin>
+        <profile>
+            <!-- Specify MaxPermSize to the test VM option. -->
+            <id>jdk8</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+                <jdk>(,1.8)</jdk>
+            </activation>
+            <properties>
+                <vtn.vm.maxPerm>-XX:MaxPermSize=1024m</vtn.vm.maxPerm>
+                <vtn.vm.argLine>${vtn.vm.maxHeap} ${vtn.vm.maxPerm}</vtn.vm.argLine>
+            </properties>
+        </profile>
+    </profiles>
 
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-checkstyle-plugin</artifactId>
-        <dependencies>
-          <dependency>
-            <groupId>org.opendaylight.neovtn</groupId>
-            <artifactId>manager.checkstyle</artifactId>
-            <version>${project.version}</version>
-          </dependency>
-        </dependencies>
-        <executions>
-          <execution>
-            <phase>process-sources</phase>
-            <goals>
-              <goal>check</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <failsOnError>true</failsOnError>
-          <configLocation>${vtn.checkstyle.xml}</configLocation>
-          <consoleOutput>true</consoleOutput>
-          <includeTestSourceDirectory>true</includeTestSourceDirectory>
-          <sourceDirectories>
-            <sourceDirectory>${project.basedir}</sourceDirectory>
-          </sourceDirectories>
-          <includes>
-            **\/*.java,**\/*.xml,**\/*.ini,**\/*.sh,**\/*.bat,**\/*.yang
-          </includes>
-          <excludes>**\/target\/</excludes>
-        </configuration>
-      </plugin>
+    <modules>
+        <module>java</module>
+        <module>yang</module>
+    </modules>
 
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <configuration>
-          <argLine>${vtn.vm.argLine} ${jacoco.agent.ut.arg}</argLine>
-          <excludedGroups>${vtn.test.slowtest}</excludedGroups>
-          <properties>
-            <property>
-              <name>listener</name>
-              <value>org.sonar.java.jacoco.JUnitListener</value>
-            </property>
-          </properties>
-        </configuration>
-      </plugin>
+    <reporting>
+        <excludeDefaults>true</excludeDefaults>
+        <outputDirectory>${project.build.directory}/site</outputDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>3.4.3</version>
+                <configuration>
+                    <dependencyDetailsEnabled>false</dependencyDetailsEnabled>
+                    <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
+                </configuration>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>cim</report>
+                            <report>index</report>
+                            <report>issue-tracking</report>
+                            <report>license</report>
+                            <report>mailing-list</report>
+                            <report>plugin-management</report>
+                            <report>scm</report>
+                            <report>summary</report>
+                            <report>project-team</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
 
-      <plugin>
-        <groupId>org.jacoco</groupId>
-        <artifactId>jacoco-maven-plugin</artifactId>
-        <configuration>
-          <includes>
-            <include>org.opendaylight.neovtn.*</include>
-          </includes>
-          <excludes>
-            <exclude>org.opendaylight.neovtn.manager.it.*</exclude>
-          </excludes>
-        </configuration>
-      </plugin>
-    </plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jxr-plugin</artifactId>
+                <version>${jxr.version}</version>
+                <configuration>
+                    <aggregate>true</aggregate>
+                    <linkJavadoc>true</linkJavadoc>
+                </configuration>
+            </plugin>
 
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>org.apache.felix</groupId>
-          <artifactId>maven-bundle-plugin</artifactId>
-          <extensions>true</extensions>
-          <configuration>
-            <instructions>
-              <Bundle-Name>
-                ${project.groupId}.${project.artifactId}
-              </Bundle-Name>
-            </instructions>
-          </configuration>
-        </plugin>
-        <plugin>
-          <groupId>org.eclipse.m2e</groupId>
-          <artifactId>lifecycle-mapping</artifactId>
-          <configuration>
-            <lifecycleMappingMetadata>
-              <pluginExecutions>
-                <pluginExecution>
-                  <pluginExecutionFilter>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>properties-maven-plugin</artifactId>
-                    <versionRange>[0.0,)</versionRange>
-                    <goals>
-                      <goal>set-system-properties</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <ignore />
-                  </action>
-                </pluginExecution>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <configuration>
+                    <configLocation>vtn/checkstyle_report.xml</configLocation>
+                </configuration>
+            </plugin>
 
-                <pluginExecution>
-                  <pluginExecutionFilter>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <finalName>${project.artifactId}-${build.suffix}</finalName>
+                    <useStandardDocletOptions>true</useStandardDocletOptions>
+                    <charset>${project.reporting.outputEncoding}</charset>
+                    <encoding>${project.reporting.outputEncoding}</encoding>
+                    <docencoding>${project.reporting.outputEncoding}</docencoding>
+                    <breakiterator>true</breakiterator>
+                    <version>true</version>
+                    <author>true</author>
+                    <keywords>true</keywords>
+                    <excludePackageNames>${javadoc.exclude}</excludePackageNames>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>properties-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>set-system-properties</goal>
+                        </goals>
+                        <configuration>
+                            <properties>
+                                <property>
+                                    <name>logback.configurationFile</name>
+                                    <value>
+                                        ${vtn.manager.dir}/common/logback.xml
+                                    </value>
+                                </property>
+                            </properties>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>com.googlecode.maven-java-formatter-plugin</groupId>
+                <artifactId>maven-java-formatter-plugin</artifactId>
+                <version>${java-formatter.version}</version>
+                <configuration>
+                    <compilerSource>${java.version.source}</compilerSource>
+                    <compilerCompliance>${java.version.source}</compilerCompliance>
+                    <compilerTargetPlatform>
+                        ${java.version.target}
+                    </compilerTargetPlatform>
+                    <configFile>
+                        ${vtn.manager.dir}/common/sun_coding_style.xml
+                    </configFile>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.opendaylight.neovtn</groupId>
+                        <artifactId>manager.checkstyle</artifactId>
+                        <version>${project.version}</version>
+                    </dependency>
+                </dependencies>
+                <executions>
+                    <execution>
+                        <phase>process-sources</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <failsOnError>true</failsOnError>
+                    <configLocation>${vtn.checkstyle.xml}</configLocation>
+                    <consoleOutput>true</consoleOutput>
+                    <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                    <sourceDirectories>
+                        <sourceDirectory>${project.basedir}</sourceDirectory>
+                    </sourceDirectories>
+                    <includes>
+                        **\/*.java,**\/*.xml,**\/*.ini,**\/*.sh,**\/*.bat,**\/*.yang
+                    </includes>
+                    <excludes>**\/target\/</excludes>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <argLine>${vtn.vm.argLine} ${jacoco.agent.ut.arg}</argLine>
+                    <excludedGroups>${vtn.test.slowtest}</excludedGroups>
+                    <properties>
+                        <property>
+                            <name>listener</name>
+                            <value>org.sonar.java.jacoco.JUnitListener</value>
+                        </property>
+                    </properties>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <configuration>
+                    <includes>
+                        <include>org.opendaylight.neovtn.*</include>
+                    </includes>
+                    <excludes>
+                        <exclude>org.opendaylight.neovtn.manager.it.*</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.felix</groupId>
+                    <artifactId>maven-bundle-plugin</artifactId>
+                    <extensions>true</extensions>
+                    <configuration>
+                        <instructions>
+                            <Bundle-Name>
+                                ${project.groupId}.${project.artifactId}
+                            </Bundle-Name>
+                        </instructions>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.eclipse.m2e</groupId>
+                    <artifactId>lifecycle-mapping</artifactId>
+                    <configuration>
+                        <lifecycleMappingMetadata>
+                            <pluginExecutions>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>org.codehaus.mojo</groupId>
+                                        <artifactId>properties-maven-plugin</artifactId>
+                                        <versionRange>[0.0,)</versionRange>
+                                        <goals>
+                                            <goal>set-system-properties</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore />
+                                    </action>
+                                </pluginExecution>
+
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>org.jacoco</groupId>
+                                        <artifactId>jacoco-maven-plugin</artifactId>
+                                        <versionRange>[0.0,)</versionRange>
+                                        <goals>
+                                            <goal>prepare-agent</goal>
+                                            <goal>pre-test</goal>
+                                            <goal>post-test</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore />
+                                    </action>
+                                </pluginExecution>
+
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>org.ops4j.pax.exam</groupId>
+                                        <artifactId>maven-paxexam-plugin</artifactId>
+                                        <versionRange>[1.2.4,)</versionRange>
+                                        <goals>
+                                            <goal>generate-depends-file</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore />
+                                    </action>
+                                </pluginExecution>
+
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>org.apache.maven.plugins</groupId>
+                                        <artifactId>maven-checkstyle-plugin</artifactId>
+                                        <versionRange>[2.0,)</versionRange>
+                                        <goals>
+                                            <goal>check</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore />
+                                    </action>
+                                </pluginExecution>
+                            </pluginExecutions>
+                        </lifecycleMappingMetadata>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <configuration>
+                        <skip>${vtn.site.skip}</skip>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>${java.version.source}</source>
+                        <target>${java.version.target}</target>
+                        <testSource>${java.version.source}</testSource>
+                        <testTarget>${java.version.target}</testTarget>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <configuration>
+                        <excludePackageNames>${javadoc.exclude}</excludePackageNames>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jxr-plugin</artifactId>
+                    <version>${jxr.version}</version>
+                    <configuration>
+                        <aggregate>true</aggregate>
+                        <linkJavadoc>true</linkJavadoc>
+                        <javadocDir>target/apidocs</javadocDir>
+                    </configuration>
+                </plugin>
+
+                <plugin>
                     <groupId>org.jacoco</groupId>
                     <artifactId>jacoco-maven-plugin</artifactId>
-                    <versionRange>[0.0,)</versionRange>
-                    <goals>
-                      <goal>prepare-agent</goal>
-                      <goal>pre-test</goal>
-                      <goal>post-test</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <ignore />
-                  </action>
-                </pluginExecution>
+                    <executions>
+                        <execution>
+                            <id>prepare-ut-agent</id>
+                            <phase>process-test-classes</phase>
+                            <goals>
+                                <goal>prepare-agent</goal>
+                            </goals>
+                            <configuration>
+                                <destFile>${sonar.jacoco.reportPath}</destFile>
+                                <propertyName>jacoco.agent.ut.arg</propertyName>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>prepare-it-agent</id>
+                            <phase>pre-integration-test</phase>
+                            <goals>
+                                <goal>prepare-agent</goal>
+                            </goals>
+                            <configuration>
+                                <destFile>${sonar.jacoco.itReportPath}</destFile>
+                                <propertyName>jacoco.agent.it.arg</propertyName>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 
-                <pluginExecution>
-                  <pluginExecutionFilter>
-                    <groupId>org.ops4j.pax.exam</groupId>
-                    <artifactId>maven-paxexam-plugin</artifactId>
-                    <versionRange>[1.2.4,)</versionRange>
-                    <goals>
-                      <goal>generate-depends-file</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <ignore />
-                  </action>
-                </pluginExecution>
+    <dependencyManagement>
+        <dependencies>
+            <!-- VTN Manager projects -->
+            <dependency>
+                <groupId>org.opendaylight.neovtn</groupId>
+                <artifactId>manager</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.opendaylight.neovtn</groupId>
+                <artifactId>manager.model</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.opendaylight.neovtn</groupId>
+                <artifactId>manager.implementation</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.opendaylight.neovtn</groupId>
+                <artifactId>manager.implementation</artifactId>
+                <version>${project.version}</version>
+                <classifier>config</classifier>
+                <type>xml</type>
+            </dependency>
+            <dependency>
+                <groupId>org.opendaylight.neovtn</groupId>
+                <artifactId>manager.neutron</artifactId>
+                <version>${project.version}</version>
+            </dependency>
 
-                <pluginExecution>
-                  <pluginExecutionFilter>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-checkstyle-plugin</artifactId>
-                    <versionRange>[2.0,)</versionRange>
-                    <goals>
-                      <goal>check</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <ignore />
-                  </action>
-                </pluginExecution>
-              </pluginExecutions>
-            </lifecycleMappingMetadata>
-          </configuration>
-        </plugin>
+            <!-- OpenDaylight third party -->
+            <dependency>
+                <groupId>org.opendaylight.controller.thirdparty</groupId>
+                <artifactId>net.sf.jung2</artifactId>
+                <version>${odl.thirdparty.jung2.version}</version>
+            </dependency>
 
-        <plugin>
-          <artifactId>maven-site-plugin</artifactId>
-          <configuration>
-            <skip>${vtn.site.skip}</skip>
-          </configuration>
-        </plugin>
+            <!-- OpenDaylight controller -->
+            <dependency>
+                <groupId>org.opendaylight.controller</groupId>
+                <artifactId>mdsal-artifacts</artifactId>
+                <version>${odl.controller.mdsal.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.opendaylight.controller</groupId>
+                <artifactId>mdsal-it-base</artifactId>
+                <version>${odl.controller.mdsal.version}</version>
+            </dependency>
 
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <configuration>
-            <source>${java.version.source}</source>
-            <target>${java.version.target}</target>
-            <testSource>${java.version.source}</testSource>
-            <testTarget>${java.version.target}</testTarget>
-          </configuration>
-        </plugin>
+            <!-- OpenDaylight MD-SAL -->
 
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-javadoc-plugin</artifactId>
-          <configuration>
-            <excludePackageNames>${javadoc.exclude}</excludePackageNames>
-          </configuration>
-        </plugin>
+            <!-- OpenDaylight openflowplugin -->
+            <dependency>
+                <groupId>org.opendaylight.openflowplugin</groupId>
+                <artifactId>openflowplugin-artifacts</artifactId>
+                <version>${odl.openflowplugin.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
 
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-jxr-plugin</artifactId>
-          <version>${jxr.version}</version>
-          <configuration>
-            <aggregate>true</aggregate>
-            <linkJavadoc>true</linkJavadoc>
-            <javadocDir>target/apidocs</javadocDir>
-          </configuration>
-        </plugin>
+            <!-- OpenDaylight neutron project -->
+            <dependency>
+                <groupId>org.opendaylight.neutron</groupId>
+                <artifactId>model</artifactId>
+                <version>${odl.neutron.version}</version>
+            </dependency>
 
-        <plugin>
-          <groupId>org.jacoco</groupId>
-          <artifactId>jacoco-maven-plugin</artifactId>
-          <executions>
-            <execution>
-              <id>prepare-ut-agent</id>
-              <phase>process-test-classes</phase>
-              <goals>
-                <goal>prepare-agent</goal>
-              </goals>
-              <configuration>
-                <destFile>${sonar.jacoco.reportPath}</destFile>
-                <propertyName>jacoco.agent.ut.arg</propertyName>
-              </configuration>
-            </execution>
-            <execution>
-              <id>prepare-it-agent</id>
-              <phase>pre-integration-test</phase>
-              <goals>
-                <goal>prepare-agent</goal>
-              </goals>
-              <configuration>
-                <destFile>${sonar.jacoco.itReportPath}</destFile>
-                <propertyName>jacoco.agent.it.arg</propertyName>
-              </configuration>
-            </execution>
-          </executions>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-  </build>
+            <!-- OpenDaylight OVSDB project -->
+            <dependency>
+                <groupId>org.opendaylight.ovsdb</groupId>
+                <artifactId>library</artifactId>
+                <version>${odl.ovsdb.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.opendaylight.ovsdb</groupId>
+                <artifactId>schema.openvswitch</artifactId>
+                <version>${odl.ovsdb.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.opendaylight.ovsdb</groupId>
+                <artifactId>schema.hardwarevtep</artifactId>
+                <version>${odl.ovsdb.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.opendaylight.ovsdb</groupId>
+                <artifactId>southbound-api</artifactId>
+                <version>${odl.ovsdb.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.opendaylight.ovsdb</groupId>
+                <artifactId>southbound-impl</artifactId>
+                <version>${odl.ovsdb.version}</version>
+            </dependency>
 
-  <dependencyManagement>
+            <!-- JaCoCo -->
+            <dependency>
+                <groupId>org.jacoco</groupId>
+                <artifactId>org.jacoco.agent</artifactId>
+                <version>${jacoco.version}</version>
+                <classifier>runtime</classifier>
+            </dependency>
+
+            <!-- Sonar -->
+            <dependency>
+                <groupId>org.sonarsource.java</groupId>
+                <artifactId>sonar-jacoco-listeners</artifactId>
+                <version>${sonar-jacoco-listeners.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <dependencies>
-      <!-- VTN Manager projects -->
-      <dependency>
-        <groupId>org.opendaylight.neovtn</groupId>
-        <artifactId>manager</artifactId>
-        <version>${project.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.opendaylight.neovtn</groupId>
-        <artifactId>manager.model</artifactId>
-        <version>${project.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.opendaylight.neovtn</groupId>
-        <artifactId>manager.implementation</artifactId>
-        <version>${project.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.opendaylight.neovtn</groupId>
-        <artifactId>manager.implementation</artifactId>
-        <version>${project.version}</version>
-        <classifier>config</classifier>
-        <type>xml</type>
-      </dependency>
-      <dependency>
-        <groupId>org.opendaylight.neovtn</groupId>
-        <artifactId>manager.neutron</artifactId>
-        <version>${project.version}</version>
-      </dependency>
+        <!-- Use SLF4J/Logback in unit tests. -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>log4j-over-slf4j</artifactId>
+            <version>2.0.7</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <scope>test</scope>
+        </dependency>
 
-      <!-- OpenDaylight third party -->
-      <dependency>
-        <groupId>org.opendaylight.controller.thirdparty</groupId>
-        <artifactId>net.sf.jung2</artifactId>
-        <version>${odl.thirdparty.jung2.version}</version>
-      </dependency>
+        <!-- Use hamcrest matchers in unit tests. -->
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-core</artifactId>
+            <scope>test</scope>
+        </dependency>
 
-      <!-- OpenDaylight controller -->
-      <dependency>
-        <groupId>org.opendaylight.controller</groupId>
-        <artifactId>mdsal-artifacts</artifactId>
-        <version>${odl.controller.mdsal.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.opendaylight.controller</groupId>
-        <artifactId>mdsal-it-base</artifactId>
-        <version>${odl.controller.mdsal.version}</version>
-      </dependency>
+        <!-- Use Mockito in unit tests. Do not pull in mockito-all because -->
+        <!-- it contains old version of hamcrest-core.                     -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <scope>test</scope>
+        </dependency>
 
-      <!-- OpenDaylight MD-SAL -->
-
-      <!-- OpenDaylight openflowplugin -->
-      <dependency>
-        <groupId>org.opendaylight.openflowplugin</groupId>
-        <artifactId>openflowplugin-artifacts</artifactId>
-        <version>${odl.openflowplugin.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-
-      <!-- OpenDaylight neutron project -->
-      <dependency>
-        <groupId>org.opendaylight.neutron</groupId>
-        <artifactId>model</artifactId>
-        <version>${odl.neutron.version}</version>
-      </dependency>
-
-      <!-- OpenDaylight OVSDB project -->
-      <dependency>
-        <groupId>org.opendaylight.ovsdb</groupId>
-        <artifactId>library</artifactId>
-        <version>${odl.ovsdb.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.opendaylight.ovsdb</groupId>
-        <artifactId>schema.openvswitch</artifactId>
-        <version>${odl.ovsdb.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.opendaylight.ovsdb</groupId>
-        <artifactId>schema.hardwarevtep</artifactId>
-        <version>${odl.ovsdb.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.opendaylight.ovsdb</groupId>
-        <artifactId>southbound-api</artifactId>
-        <version>${odl.ovsdb.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.opendaylight.ovsdb</groupId>
-        <artifactId>southbound-impl</artifactId>
-        <version>${odl.ovsdb.version}</version>
-      </dependency>
-
-      <!-- JaCoCo -->
-      <dependency>
-        <groupId>org.jacoco</groupId>
-        <artifactId>org.jacoco.agent</artifactId>
-        <version>${jacoco.version}</version>
-        <classifier>runtime</classifier>
-      </dependency>
-
-      <!-- Sonar -->
-      <dependency>
-        <groupId>org.sonarsource.java</groupId>
-        <artifactId>sonar-jacoco-listeners</artifactId>
-        <version>${sonar-jacoco-listeners.version}</version>
-      </dependency>
+        <!-- Sonar -->
+        <dependency>
+            <groupId>org.sonarsource.java</groupId>
+            <artifactId>sonar-jacoco-listeners</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
-  </dependencyManagement>
 
-  <dependencies>
-    <!-- Use SLF4J/Logback in unit tests. -->
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>jcl-over-slf4j</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>log4j-over-slf4j</artifactId>
-      <version>2.0.7</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>ch.qos.logback</groupId>
-      <artifactId>logback-core</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>ch.qos.logback</groupId>
-      <artifactId>logback-classic</artifactId>
-      <scope>test</scope>
-    </dependency>
-
-    <!-- Use hamcrest matchers in unit tests. -->
-    <dependency>
-      <groupId>org.hamcrest</groupId>
-      <artifactId>hamcrest-core</artifactId>
-      <scope>test</scope>
-    </dependency>
-
-    <!-- Use Mockito in unit tests. Do not pull in mockito-all because -->
-    <!-- it contains old version of hamcrest-core.                     -->
-    <dependency>
-      <groupId>org.mockito</groupId>
-      <artifactId>mockito-core</artifactId>
-      <scope>test</scope>
-    </dependency>
-
-    <!-- Sonar -->
-    <dependency>
-      <groupId>org.sonarsource.java</groupId>
-      <artifactId>sonar-jacoco-listeners</artifactId>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-
-  <url>${odl.site.url}/${project.groupId}/${stream}/${project.artifactId}/</url>
-  <distributionManagement>
-    <site>
-      <id>opendaylight-site</id>
-      <url>${nexus.site.url}/${project.artifactId}/</url>
-    </site>
-  </distributionManagement>
+    <url>${odl.site.url}/${project.groupId}/${stream}/${project.artifactId}/</url>
+    <distributionManagement>
+        <site>
+            <id>opendaylight-site</id>
+            <url>${nexus.site.url}/${project.artifactId}/</url>
+        </site>
+    </distributionManagement>
 </project>
