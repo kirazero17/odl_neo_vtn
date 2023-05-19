@@ -15,9 +15,9 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.opendaylight.neovtn</groupId>
-    <artifactId>manager.common.yang</artifactId>
+    <artifactId>manager.common.yangtools</artifactId>
     <version>10.0.4</version>
-    <relativePath>../common/yang</relativePath>
+    <relativePath>../common/yangtools</relativePath>
   </parent>
 
   <artifactId>manager.implementation</artifactId>
