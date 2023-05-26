@@ -349,7 +349,8 @@ public abstract class IpNetwork implements Serializable {
      *    The given network address or prefix length is invalid.
      */
     IpNetwork(InetAddress iaddr, int prefix) {
-        int plen = (prefix == 0) ? getMaxPrefix() : prefix;
+        int plen = (prefix == 0) ? ge
+                tMaxPrefix() : prefix;
         inetAddress = init(iaddr, plen);
         prefixLength = plen;
     }
@@ -426,7 +427,9 @@ public abstract class IpNetwork implements Serializable {
      *
      * @return  The maximum length of the network prefix.
      */
-    public abstract int getMaxPrefix();
+    public final int getMaxPrefix(){ //no more abstract test
+        return Integer.SIZE;
+    }
 
     /**
      * Return an {@link IpPrefix} instance which represents this instance.
