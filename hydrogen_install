@@ -44,6 +44,7 @@ https://wiki.opendaylight.org/view/OpenDaylight_Virtual_Tenant_Network_(VTN):Ins
       Note: if you're using a newer version of json-c library, edit /usr/include/json-c/json.h and add "#include <bits.h>" to avoid the error for implicit usage of "is_error"
 
 === Build ===
+ 0. Go to /usr/local/vtn
  1. Download the code from git.
         git clone ssh://git@github.com:kirazero17/odl_neo_vtn.git
           or
