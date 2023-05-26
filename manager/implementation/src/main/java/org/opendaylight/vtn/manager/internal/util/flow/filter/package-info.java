@@ -24,8 +24,8 @@
 })
 package org.opendaylight.vtn.manager.internal.util.flow.filter;
 
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapters;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapters;
 
 import org.opendaylight.vtn.manager.util.xml.adapters.ByteAdapter;
 import org.opendaylight.vtn.manager.util.xml.adapters.DoubleAdapter;

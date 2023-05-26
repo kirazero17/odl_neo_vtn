@@ -8,7 +8,7 @@
 
 package org.opendaylight.vtn.manager.internal.util.inventory;
 
-import javax.xml.bind.annotation.adapters.XmlAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlAdapter;
 
 /**
  * {@link SalNodeAdapter} establishes XML data binding between {@link SalNode}

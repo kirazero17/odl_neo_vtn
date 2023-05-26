@@ -8,7 +8,7 @@
 
 package org.opendaylight.vtn.manager.util.xml.adapters;
 
-import javax.xml.bind.annotation.adapters.XmlAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlAdapter;
 
 /**
  * {@code DoubleAdapter} establishes XML data binding between {@link Double}

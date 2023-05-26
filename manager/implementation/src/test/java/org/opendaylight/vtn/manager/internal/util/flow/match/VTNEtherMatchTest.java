@@ -21,7 +21,7 @@ import java.util.Map.Entry;
 import java.util.Map;
 import java.util.Set;
 
-import javax.xml.bind.Unmarshaller;
+import jakarta.xml.bind.Unmarshaller;
 
 import org.junit.Test;
 

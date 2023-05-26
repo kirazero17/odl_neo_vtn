@@ -8,8 +8,8 @@
 
 package org.opendaylight.vtn.manager.internal;
 
-import javax.xml.bind.ValidationEvent;
-import javax.xml.bind.ValidationEventHandler;
+import jakarta.xml.bind.ValidationEvent;
+import jakarta.xml.bind.ValidationEventHandler;
 
 /**
  * JAXB validation event handler that terminates the current operation on

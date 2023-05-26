@@ -14,7 +14,7 @@ import java.net.InetAddress;
 import java.util.HashSet;
 import java.util.Random;
 
-import javax.xml.bind.Unmarshaller;
+import jakarta.xml.bind.Unmarshaller;
 
 import org.junit.Test;
 
