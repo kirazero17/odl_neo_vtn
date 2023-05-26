@@ -401,19 +401,6 @@
                         <testSource>${java.version.source}</testSource>
                         <testTarget>${java.version.target}</testTarget>
                     </configuration>
-                    <dependencies>
-                        <dependency>
-                            <groupId>jakarta.xml.bind</groupId>
-                            <artifactId>jakarta.xml.bind-api</artifactId>
-                            <version>4.0.0</version>
-                        </dependency>
-                        <dependency>
-                            <groupId>com.sun.xml.bind</groupId>
-                            <artifactId>jaxb-impl</artifactId>
-                            <version>4.0.0</version>
-                            <scope>runtime</scope>
-                        </dependency>
-                    </dependencies>
                 </plugin>
 
                 <plugin>
@@ -630,6 +617,19 @@
             <groupId>org.sonarsource.java</groupId>
             <artifactId>sonar-jacoco-listeners</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>jakarta.xml.bind</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+            <version>4.0.1</version>
+            <scope>runtime</scope>
         </dependency>
     </dependencies>
 
