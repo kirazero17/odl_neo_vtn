@@ -250,17 +250,7 @@
                         <artifactId>manager.checkstyle</artifactId>
                         <version>${project.version}</version>
                     </dependency>
-                    <dependency>
-                        <groupId>jakarta.xml.bind</groupId>
-                        <artifactId>jakarta.xml.bind-api</artifactId>
-                        <version>4.0.0</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>com.sun.xml.bind</groupId>
-                        <artifactId>jaxb-impl</artifactId>
-                        <version>4.0.0</version>
-                        <scope>runtime</scope>
-                    </dependency>
+                    
                 </dependencies>
                 <executions>
                     <execution>
@@ -412,6 +402,19 @@
                         <testSource>${java.version.source}</testSource>
                         <testTarget>${java.version.target}</testTarget>
                     </configuration>
+                    <dependencies>
+                        <dependency>
+                            <groupId>jakarta.xml.bind</groupId>
+                            <artifactId>jakarta.xml.bind-api</artifactId>
+                            <version>4.0.0</version>
+                        </dependency>
+                        <dependency>
+                            <groupId>com.sun.xml.bind</groupId>
+                            <artifactId>jaxb-impl</artifactId>
+                            <version>4.0.0</version>
+                            <scope>runtime</scope>
+                        </dependency>
+                    </dependencies>
                 </plugin>
 
                 <plugin>
