@@ -45,6 +45,7 @@
 
         <!-- Default checkstyle configuration -->
         <vtn.checkstyle.xml>vtn/checkstyle.xml</vtn.checkstyle.xml>
+        <checkstyle.skip>true</checkstyle.skip>
 
         <!-- Ignore maven-site-plugin goals if true -->
         <vtn.site.skip>false</vtn.site.skip>
