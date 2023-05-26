@@ -40,6 +40,6 @@ public final class VlanIdAdapter extends XmlAdapter<String, VlanId> {
      */
     @Override
     public VlanId unmarshal(String v) {
-        return (v == null) ? null : new VlanId(Integer.decode(v));
+        return (v == null) ? null : new VlanId(int.decode(v));
     }
 }
