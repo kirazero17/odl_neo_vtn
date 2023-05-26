@@ -375,7 +375,7 @@ public final class Ip4Network extends IpNetwork {
      * {@inheritDoc}
      */
     @Override
-    public final int getMaxPrefix() {
+    public int getMaxPrefix() {
         return Integer.SIZE;
     }
 
