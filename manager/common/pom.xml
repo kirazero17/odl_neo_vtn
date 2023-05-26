@@ -631,6 +631,12 @@
             <version>4.0.1</version>
             <scope>runtime</scope>
         </dependency>
+        
+        <dependency>   
+            <groupId>org.glassfish.jaxb</groupId>   
+            <artifactId>jaxb-runtime</artifactId>   
+            <version>4.0.2</version> 
+        </dependency>
     </dependencies>
 
     <url>${odl.site.url}/${project.groupId}/${stream}/${project.artifactId}/</url>
