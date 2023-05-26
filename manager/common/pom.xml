@@ -250,7 +250,6 @@
                         <artifactId>manager.checkstyle</artifactId>
                         <version>${project.version}</version>
                     </dependency>
-                    
                 </dependencies>
                 <executions>
                     <execution>
