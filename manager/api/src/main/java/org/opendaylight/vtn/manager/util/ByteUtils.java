@@ -200,7 +200,8 @@ public final class ByteUtils {
      */
     public static byte[] toBytes(String hex) {
         if (hex == null) {
-            return null;
+            //return null
+            return new byte[0];
         }
         if (hex.isEmpty()) {
             return new byte[0];
